@@ -1,0 +1,17 @@
+{
+  "name": "javascript-funcoes-estudo",
+  "version": "1.0.0",
+  "description": "Projeto de estudo sobre funções em JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "funcoes",
+    "estudo",
+    "exercicios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
