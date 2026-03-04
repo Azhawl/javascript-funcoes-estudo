@@ -30,7 +30,7 @@ const numeros = [1, 2, 3, 4, 5];
 
 // forEach - executa função para cada elemento
 numeros.forEach(function(numero) {
-    console.log(`Número: ${numero}`);
+    console.log("Número: " + numero);
 });
 
 // map - transforma cada elemento
@@ -50,7 +50,7 @@ setTimeout(function() {
 let contador = 0;
 const intervalo = setInterval(() => {
     contador++;
-    console.log(`Contador: ${contador}`);
+    console.log("Contador: " + contador);
     if (contador >= 3) {
         clearInterval(intervalo);
     }

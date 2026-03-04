@@ -12,8 +12,8 @@ function criarMultiplicador(multiplicador) {
 const dobrar = criarMultiplicador(2);
 const triplicar = criarMultiplicador(3);
 
-console.log(`Dobro de 5: ${dobrar(5)}`);
-console.log(`Triplo de 5: ${triplicar(5)}`);
+console.log("Dobro de 5: " + dobrar(5));
+console.log("Triplo de 5: " + triplicar(5));
 
 // Função que recebe função como parâmetro
 function aplicarOperacao(a, b, operacao) {
@@ -24,9 +24,9 @@ const somar = (x, y) => x + y;
 const subtrair = (x, y) => x - y;
 const multiplicar = (x, y) => x * y;
 
-console.log(`10 + 5 = ${aplicarOperacao(10, 5, somar)}`);
-console.log(`10 - 5 = ${aplicarOperacao(10, 5, subtrair)}`);
-console.log(`10 * 5 = ${aplicarOperacao(10, 5, multiplicar)}`);
+console.log("10 + 5 = " + aplicarOperacao(10, 5, somar));
+console.log("10 - 5 = " + aplicarOperacao(10, 5, subtrair));
+console.log("10 * 5 = " + aplicarOperacao(10, 5, multiplicar));
 
 // Função que retorna função com parâmetros pré-configurados
 function criarValidacao(regra) {
@@ -38,8 +38,8 @@ function criarValidacao(regra) {
 const validarEmail = criarValidacao(email => email.includes("@"));
 const validarPositivo = criarValidacao(num => num > 0);
 
-console.log(`Email válido? ${validarEmail("teste@email.com")}`);
-console.log(`Número positivo? ${validarPositivo(5)}`);
+console.log("Email válido? " + validarEmail("teste@email.com"));
+console.log("Número positivo? " + validarPositivo(5));
 
 // Composição de funções
 function compor(f, g) {
@@ -52,7 +52,7 @@ const adicionar1 = x => x + 1;
 const multiplicar2 = x => x * 2;
 
 const adicionar1DepoisMultiplicar2 = compor(multiplicar2, adicionar1);
-console.log(`(5 + 1) * 2 = ${adicionar1DepoisMultiplicar2(5)}`);
+console.log("(5 + 1) * 2 = " + adicionar1DepoisMultiplicar2(5));
 
 // Função de ordem superior para criar funções de array
 function criarFiltro(condicao) {

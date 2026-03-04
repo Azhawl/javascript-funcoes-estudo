@@ -12,7 +12,7 @@ saudacao();
 
 // Função com parâmetros
 function cumprimentar(nome) {
-    console.log(`Olá, ${nome}!`);
+    console.log("Olá, " + nome + "!");
 }
 
 cumprimentar("João");
@@ -24,11 +24,11 @@ function somar(a, b) {
 }
 
 const resultado = somar(5, 3);
-console.log(`5 + 3 = ${resultado}`);
+console.log("5 + 3 = " + resultado);
 
 // Função atribuída a uma variável
 const multiplicar = function(x, y) {
     return x * y;
 };
 
-console.log(`4 * 7 = ${multiplicar(4, 7)}`);
+console.log("4 * 7 = " + multiplicar(4, 7));

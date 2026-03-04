@@ -15,10 +15,10 @@ function criarContador() {
 const contador1 = criarContador();
 const contador2 = criarContador();
 
-console.log(`Contador 1: ${contador1()}`); // 1
-console.log(`Contador 1: ${contador1()}`); // 2
-console.log(`Contador 2: ${contador2()}`); // 1 (independente)
-console.log(`Contador 1: ${contador1()}`); // 3
+console.log("Contador 1: " + contador1()); // 1
+console.log("Contador 1: " + contador1()); // 2
+console.log("Contador 2: " + contador2()); // 1 (independente)
+console.log("Contador 1: " + contador1()); // 3
 
 // Closure com múltiplas funções
 function criarCalculadora() {
@@ -47,10 +47,10 @@ function criarCalculadora() {
 }
 
 const calc = criarCalculadora();
-console.log(`Somar 10: ${calc.somar(10)}`);
-console.log(`Subtrair 3: ${calc.subtrair(3)}`);
-console.log(`Multiplicar 2: ${calc.multiplicar(2)}`);
-console.log(`Resultado final: ${calc.obterResultado()}`);
+console.log("Somar 10: " + calc.somar(10));
+console.log("Subtrair 3: " + calc.subtrair(3));
+console.log("Multiplicar 2: " + calc.multiplicar(2));
+console.log("Resultado final: " + calc.obterResultado());
 
 // Closure em loops (problema comum)
 function criarFuncoes() {
@@ -68,7 +68,7 @@ function criarFuncoes() {
 
 const funcoes = criarFuncoes();
 funcoes.forEach((fn, index) => {
-    console.log(`Função ${index} retorna: ${fn()}`);
+    console.log("Função " + index + " retorna: " + fn());
 });
 
 // Closure para encapsulamento (módulo pattern)
@@ -90,6 +90,6 @@ const criarModulo = (function() {
     };
 })();
 
-console.log(`Método público: ${criarModulo.metodoPublico(5)}`);
-console.log(`Valor: ${criarModulo.obterValor()}`);
+console.log("Método público: " + criarModulo.metodoPublico(5));
+console.log("Valor: " + criarModulo.obterValor());
 // console.log(criarModulo.metodoPrivado()); // Erro: método privado
